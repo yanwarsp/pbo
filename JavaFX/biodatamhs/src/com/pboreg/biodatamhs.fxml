@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pboreg.BiodataMhsController">
+   <bottom>
+      <AnchorPane prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #DADFE1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelFoot" alignment="TOP_RIGHT" layoutX="233.0" layoutY="4.0" prefWidth="590.0" text="Created by Yanwar" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="52.0" prefWidth="1366.0" style="-fx-background-color: #D91E18;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelHead" alignment="CENTER" layoutY="9.0" text="BIODATA MAHASISWA UPJ" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="732.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelNIM" layoutX="14.0" layoutY="58.0" prefHeight="30.0" prefWidth="149.0" text="NIM" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="420.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelNama" layoutX="14.0" layoutY="95.0" text="NAMA LENGKAP" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="420.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelUmur" layoutX="14.0" layoutY="132.0" text="UMUR" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="420.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelJurusan" layoutX="14.0" layoutY="171.0" text="JURUSAN" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="420.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textNIM" layoutX="200.0" layoutY="57.0" prefHeight="31.0" prefWidth="382.0" promptText="Masukan NIM Anda" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="14.0" />
+            <TextField fx:id="textNama" layoutX="200.0" layoutY="95.0" prefHeight="31.0" prefWidth="263.0" promptText="Masukan Nama Lengkap Anda" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="14.0" />
+            <TextField fx:id="textUmur" layoutX="200.0" layoutY="132.0" promptText="Masukan Umur Anda" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="14.0" />
+            <TextField fx:id="textJurusan" layoutX="200.0" layoutY="171.0" promptText="Masukan Jurusan Anda" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="14.0" />
+            <Button fx:id="buttonDaftar" layoutX="496.0" layoutY="226.0" mnemonicParsing="false" onAction="#buttonDaftarOnClick" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #2ECC71;" text="Daftar" textFill="WHITE" AnchorPane.rightAnchor="14.0" />
+            <Label fx:id="labelNotif" layoutX="14.0" layoutY="289.0" prefHeight="13.0" prefWidth="223.0" textFill="RED" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
